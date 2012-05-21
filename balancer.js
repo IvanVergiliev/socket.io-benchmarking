@@ -41,7 +41,7 @@ var app = require('express').createServer(),
 
 
     var queueHost = "localhost";
-    if(program.args.length>=0) {
+    if(program.args.length>0) {
         queueHost = program.args[0];
     } else if (program.args.length==0) {
         logger.warn("Default to localhost for queue host.");
